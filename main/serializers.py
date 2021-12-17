@@ -1,9 +1,5 @@
 from django.contrib.auth import get_user_model
-
-# 3rd party imports
 from rest_framework import serializers
-
-# project imports
 from djangoflutterwave.models import FlwTransactionModel, FlwPlanModel
 
 

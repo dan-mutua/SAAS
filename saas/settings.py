@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'main_site',
     'djangoflutterwave',
+    'drf_yasg',
 ]
 
 FLW_PRODUCTION_PUBLIC_KEY = "your key"

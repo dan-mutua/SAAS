@@ -1,18 +1,13 @@
-# stdlib imports
-
-# django imports
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth import get_user_model
 from django.views.generic import TemplateView
 
-# 3rd party imports
 from rest_framework import status
 from rest_framework.generics import CreateAPIView
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
-# project imports
 from djangoflutterwave import settings
 from djangoflutterwave.models import FlwTransactionModel, FlwPlanModel
 from djangoflutterwave.serializers import DRTransactionSerializer

@@ -77,10 +77,10 @@ class FlwTransactionModel(models.Model):
     """Represents a transaction for a specific payment type and user"""
 
     plan = models.ForeignKey(
-        to=FlwPlanModel, related_name="flw_transactions", on_delete=models.CASCADE
+        to=FlwPlanModel, related_name="flw_transactions2", on_delete=models.CASCADE
     )
     user = models.ForeignKey(
-        to=UserModel, related_name="flw_transactions", on_delete=models.CASCADE
+        to=UserModel, related_name="flw_transactions2", on_delete=models.CASCADE
     )
     created_datetime = models.DateTimeField(auto_now_add=True)
     tx_ref = models.CharField(max_length=100)
