@@ -1,11 +1,4 @@
-# stdlib  imports
-
-# django imports
 from django.urls import path
-
-# 3rd party imports
-
-# project imports
 from djangoflutterwave.views import (
     TransactionCreateView,
     TransactionDetailView,
